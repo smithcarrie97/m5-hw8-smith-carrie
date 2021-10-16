@@ -9,3 +9,66 @@
 body {
   font-family: 'Bebas Neue', Impact, sans-serif;
 }
+
+h1 {
+  text-align: center;
+  background-color: #6003C3;
+  color: #FFFFFF;
+  height: 150px;
+  padding-top: 50px;
+  font-size: 40px;
+}
+
+p {
+  color: #6003C3;
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+
+#box-1 {
+  background-color: #FCFF00;
+  width: 200px;
+  height: 200px;
+}
+
+#box-2 {
+  background-color: #57FFC9;
+  width: 200px;
+  height: 200px;
+}
+
+#box-3 {
+  background-color: #A5FF01;
+  width: 200px;
+  height: 200px;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0% 15% 0% 15%;
+}
+
+.box {
+  color: #6003C3;
+  font-size: 7rem;
+  border-color: #6003C3;
+  border-style: solid;
+  border-width: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .boxes {
+    display: flex;
+    flex-direction: column; 
+  }
+  .box {
+    margin: 3%;
+  }
+}
